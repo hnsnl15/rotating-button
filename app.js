@@ -5,7 +5,7 @@ const btn5 = document.getElementById("btn5");
 
 btn5.onclick = function () {
   nums.unshift(nums.pop());
-  for (let i = 1; i < ids.length; i++) {
-    document.getElementById(`btn${i}`).innerHTML = nums[i];
+  for (let i = 0; i < ids.length; i++) {
+    document.getElementById(`btn${ids[i]}`).innerHTML = nums[i];
   }
 };
