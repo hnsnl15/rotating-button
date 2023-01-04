@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: purple;
+  color: aliceblue;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#btns {
+  width: 75%;
+  height: max-content;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9 {
+  position: relative;
+  height: 80px;
+  transition: all 200ms ease-out;
+}
+
+.btn:active {
+  color: white;
+  background: rgb(88, 88, 250);
+  transform: scale(0.97);
+  outline: none;
+  border: none;
+}
